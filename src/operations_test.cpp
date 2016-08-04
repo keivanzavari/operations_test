@@ -14,20 +14,11 @@ public:
     
     OperationsTest(const std::string &name)
         : RTT::TaskContext(name)
-        // , sockfd_(0)
-        // , port_(0)
-        // , first_run_updatehook_(true)
     {
-        // this->addProperty("port", port_);
-        // this->addProperty("addr", addr_);
         this->addOperation("getMyName", &OperationsTest::getMyName, this)
         .doc("get name");
         this->addOperation("getOwnerName", &OperationsTest::getOwnerName, this)
         .doc("Returns the name of the owner of this object.");
-
-        // fda_ = new FileDescriptorActivity(0);
-        // this->setActivity(fda_);
-
     }
 
     ~OperationsTest()
@@ -73,8 +64,6 @@ public:
     //     return getOwner()->getName();
     // }
 private:
-    std::string addr_;
-    bool first_run_updatehook_;
 
 };
 
