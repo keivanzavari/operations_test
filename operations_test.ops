@@ -1,0 +1,5 @@
+import("operations_test")
+loadComponent("Test", "OperationsTest")
+
+Test.configure()
+//Test.start()
