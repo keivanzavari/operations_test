@@ -1,5 +1,6 @@
 # operations_test
 
+A simple orocos component to test an orocos operation with a std::vector output.
 
 1. Compile package
 
