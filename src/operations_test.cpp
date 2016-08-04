@@ -58,10 +58,14 @@ public:
         names.resize(2);
         for (unsigned int i=0; i<names.size(); ++i)
             names[i] = getName();
+        RTT::log(RTT::Debug) << "Hi you just called me!!" << RTT::endlog();
+
+        RTT::Logger::In in(this->getName());
+        RTT::log(RTT::Info) << "another log!! "<< RTT::endlog();
         return names; ///this->getOwner()
     }
     // std::string OperationsTest::testOP(){
-    //     RTT::log(RTT::Debug) << "Hi I am test OP" << RTT::endlog();
+    
     //     return this->getOwner(); //->getPeerList();
     // }
 
