@@ -16,7 +16,4 @@
    export RTT_COMPONENT_PATH=$(pwd)/install/lib/orocos:$RTT_COMPONENT_PATH
    deployer -l info operations_test.ops
    ```
-
-#3. From a different shell/tab:
-  
    
